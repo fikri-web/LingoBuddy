@@ -1,0 +1,6 @@
+{
+  "name": "LingoBuddy",
+  "description": "Interactive foreign language learning platform with playful geometric design, featuring vocabulary builders, bilingual stories, and dynamic games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FFFDF5;
+    color: #1E293B;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Outlined Outfitted Font variables styled for Headings */
+.font-outfit {
+  font-family: var(--font-outfit), 'Outfit', system-ui, sans-serif;
+}
+
+.font-jakarta {
+  font-family: var(--font-plus-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Dot grid background styled with faint radial gradients */
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(30, 41, 59, 0.08) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* 3D Flip Card transition utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Playful bouncy wiggle animations */
+@keyframes emoji-bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.15) rotate(5deg);
+  }
+}
+
+.animate-emoji-bounce {
+  animation: emoji-bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes float-shape-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(10deg);
+  }
+}
+
+.animate-float-shape {
+  animation: float-shape-slow 6s infinite ease-in-out;
+}
+
+/* Special Scrollbars with Hard Outlines */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF5;
+  border-left: 2px solid #1E293B;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border: 2px solid #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}
